@@ -1,0 +1,39 @@
+footer {
+    background-color: #F8F9FB;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 42px 50px 42px 50px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-title {
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.sub-menu-item {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: -0.1em;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.business-name {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.business-details {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.policy-title {
+    font-size: 14px;
+    text-align: left;
+}
