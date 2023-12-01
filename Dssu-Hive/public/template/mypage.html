@@ -1,0 +1,160 @@
+<template>
+    <!-- section -->
+    <div class="section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 position-relative">
+            <div
+              style="
+                margin-right: auto;
+                margin-left: auto;
+                position: relative;
+                background-color: transparent;
+                padding-top: 30%;
+              "
+            >
+              <img
+                alt="Shohei Ohtani"
+                style="
+                  position: absolute;
+                  bottom: 16px;
+                  left: 2.5%;
+                  width: 180px;
+                  padding: 10px;
+                  background-color: #ebebeb;
+                  border: 1px solid #cfcfcf;
+                  z-index: 2;
+                  transition: 0.3s bottom;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 16px;
+                  left: 28%;
+                  padding: 10px;
+                  z-index: 2;
+                  transition: 0.3s bottom;
+                "
+              >
+                <h1 class="text-white pe-6">오탄희</h1>
+                <p class="text-white text-opacity-75 fs-lg">
+                  TWPB/T: L/R6' 4"/210Age: 29
+                </p>
+  
+                <div class="nav small">
+                  <div class="text-white text-opacity-75">
+                    Last Update 2023.09.10
+                  </div>
+                  <div class="vr bg-white mx-3 my-1"></div>
+                  <div class="text-white text-opacity-75">
+                    <i class="bi-person"></i> 프로그램 20
+                  </div>
+                  <div class="vr bg-white mx-3 my-1"></div>
+                  <div class="text-white text-opacity-75">
+                    연락처 : 02-3333-3333
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section --><!-- section -->
+    <section class="bg-gray-100 section pt-0">
+      <div class="container">
+        <div class="row flex-row-reverse gy-4">
+          <div class="col-lg-12">
+            <div
+              class="course-detail-tab bg-white shadow-sm rounded border border-gray-100"
+            >
+              <c-tabs v-model="currentTabId" @tab-click="chageTab">
+                <c-tab-pane
+                  v-for="(item, index) in compList"
+                  :label="item.title"
+                  :name="item.tabId"
+                >
+                  <!-- <component :is="item.comp" :params="item.postContent"></component> -->
+                </c-tab-pane>
+              </c-tabs>
+  
+              <div class="tab-content" id="course_detail_tabContent">
+                <!-- Tab 1 -->
+                <div
+                  class="tab-pane fade active show"
+                  id="overview-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="overview-tab"
+                  tabindex="0"
+                >
+  
+                  <div class="subsection fold-item active">
+                    <h5 class="subsection-name">학력</h5>
+                  </div>
+  
+                  <div class="subsection fold-item active">
+                    <h5 class="subsection-name">경력</h5>
+                  </div>
+  
+                  <div class="subsection fold-item active">
+                    <h5 class="subsection-name">자격</h5>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Tabbar -->
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+  </template>
+  
+  <script>
+  import {
+    onMounted,
+    reactive,
+    toRefs,
+    ref,
+    computed,
+    watch,
+    onBeforeUnmount,
+    getCurrentInstance,
+  } from "vue";
+  import { useRouter, useRoute, onBeforeRouteUpdate } from "vue-router";
+  import { useStore } from "vuex";
+  import Lightbox from "@/components/lightbox/Index.vue";
+  export default {
+    components: { Lightbox },
+    data() {
+      return {};
+    },
+    methods: {},
+    setup(props, { emit }) {
+      const router = useRouter();
+      const route = useRoute();
+      const store = useStore();
+  
+      const { proxy } = getCurrentInstance();
+  
+      const compList = ref([
+        { title: "개인정보", tabId: "app", path: "" },
+        { title: "프로그램", tabId: "mnu", path: "/mnu" },
+      ]);
+  
+      const currentTabId = ref("app");
+      const chageTab = (tab, e) => {
+        const comp = compList.value.filter(
+          (item) => item.tabId === tab.props.name
+        )[0];
+        router.push(`/admin/app/edit/${route.params.appno}${comp.path}`);
+      };
+  
+      onMounted(() => {});
+  
+      return { compList, chageTab, currentTabId };
+    },
+  };
+  </script>

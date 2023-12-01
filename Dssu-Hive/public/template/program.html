@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>program</title>
+
+    <link href="/public/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main id="content">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-6">
+                    <h2><b>프로그램</b></h2>
+                </div>
+                <div class="col-6 search-container">
+                    <div class="border border-secondary p-1 rounded-pill">
+                        <form method="get" action="#">
+                            <input type="text" class="ms-3 border-0 p-0 mb-1" placeholder="프로그램 찾기">
+                            <button type="submit" class="border-0 bg-transparent">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col pe-0">
+                    <div class="dropdown">
+                        <button class="btn border-secondary rounded-pill dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            정렬 기준
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">최신순</a></li>
+                            <li><a class="dropdown-item" href="#">오래된순</a></li>
+                            <li><a class="dropdown-item" href="#">인기순</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pe-0">
+                    <button class="btn border-secondary rounded-pill ps-3 pe-3 program-field-select" type="button">
+                        전체
+                    </button>
+                </div>
+                <div class="col pe-0">
+                    <button class="btn border-secondary rounded-pill ps-3 pe-3" type="button">
+                        특화분야
+                    </button>
+                </div>
+                <div class="col pe-0">
+                    <button class="btn border-secondary rounded-pill ps-3 pe-3" type="button">
+                        일반분야
+                    </button>
+                </div>
+                <div class="col pe-0">
+                    <button class="btn border-secondary rounded-pill ps-3 pe-3" type="button">
+                        자율분야
+                    </button>
+                </div>
+                <div class="col-5">
+                    <p class="text-end mt-3 text-secondary">42개 프로그램</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample1.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>전기기능사 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.14~23.12.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">토 13:00~17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">15명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample2.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>석유화학 산업의 이해 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.21~24.01.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">토 09:00~11:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample3.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>수소에너지 생산설비 윤영 자격교육 (일반용접) 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.12~20.12.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">목 18:00~21:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample4.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>수소에너지 안전관리 교육 (가스기능사 자격 취득) 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.12~23.12.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">목 18:30~21:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample5.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>석유화학 산업의 이해과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.21~24.01.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">토 09:00~11:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample6.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>석유화학 공정의 이해과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.18~24.01.24</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">수 18:00~21:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample7.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>전산세무 2급 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.08.21~10.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">월~목 18:40~20:40</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">10명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample8.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>기구필라테스 지도자양성 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.09.26~24.01.09</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">화 13:00~15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">10명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample9.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>라인댄스 지도자 양성과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.09.12~23.12.29</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">화 18:30~20:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/program-sample10.png" class="card-img-top" alt="program-sample1">
+                        <div class="card-body">
+                            <div class="card-title" style="height: 50px">
+                                <h6><b>사업장 내 안전관리 과정</b></h6>
+                            </div>
+                            <div class="card-text">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>기간</b></td>
+                                        <td class="text-end">23.10.21~24.01.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>시간</b></td>
+                                        <td class="text-end">토 09:00~11:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>모집인원</b></td>
+                                        <td class="text-end">20명</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="/public/assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
