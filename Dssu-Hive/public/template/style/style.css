@@ -1,3 +1,24 @@
+.page-header {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.sub-page-header {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.txt-bd {
+    font-weight: 600;
+}
+
 /*footer style*/
 
 footer {
@@ -20,7 +41,7 @@ footer {
     line-height: 1.8;
     letter-spacing: -0.1em;
     text-decoration: none;
-    color:rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .business-name {
@@ -118,15 +139,16 @@ footer {
     font-size: 14px;
 }
 
-.gd-table th, .gd-table td {
+.gd-table th,
+.gd-table td {
     border: 1px solid black;
 }
 
 .gd-table th:first-child,
-.gd-table th:last-child, 
+.gd-table th:last-child,
 .gd-table td:last-child {
-      border-left: none;
-      border-right: none;
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -141,4 +163,17 @@ footer {
 .program-field-select {
     background-color: #EFEFEF;
     border: 1.5px solid #000;
+}
+
+
+/*program-detail style*/
+
+.btn-point-color {
+    background-color: #0098AD;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.btn-point-color:hover {
+    color: #FFF;
 }
