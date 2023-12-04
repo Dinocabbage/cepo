@@ -7,6 +7,14 @@
     text-align: left;
 }
 
+.page-header-m-0 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 .sub-page-header {
     font-size: 18px;
     font-weight: 400;
@@ -172,4 +180,114 @@ footer {
 
 .btn-point-color:hover {
     color: #FFF;
+}
+
+/*branding-2 style*/
+
+.brd-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.v-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #DBE0E8;
+}
+
+.brd-sec-title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.brd-sec-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32.4px;
+}
+
+.energy-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.brd-sec-box {
+    border: 1px solid gray;
+    padding: 60px;
+}
+
+/*governance style*/
+.gv-container {
+    position: relative;
+    text-align: center;
+    color: #111111;
+}
+
+.gv-container .gv-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.gv-container .gv-text .letter {
+    font-size: 17em;
+    font-weight: 800;
+    margin: -5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gv-container .gv-text .letter:hover {
+    transform: translateY(-10%);
+}
+
+.gv-container .gv-text .letter.d:hover {
+    color: #9747FF;
+}
+
+.gv-container .gv-text .letter.s:hover {
+    color: #EF721C;
+}
+
+.gv-container .gv-text .letter.su:hover {
+    color: #49DE73;
+}
+
+.gv-container img {
+    width: 640px;
+    height: 640px;
+    animation: spin 13s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.click-the-dssu {
+    writing-mode: tb;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    align-items: flex-end;
+}
+
+
+.next-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
