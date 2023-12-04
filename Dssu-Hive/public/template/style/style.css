@@ -71,10 +71,6 @@ footer {
     height: 60px;
 }
 
-.arrow-icon {
-    font-size: 18px;
-}
-
 .cd-hover:hover .bg-img {
     transform: scale(1.01);
     transition: transform 0.5s ease;
